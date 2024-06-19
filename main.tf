@@ -9,3 +9,7 @@ module "root_create_dynamo_locking" {
      dynamodb_name = var.root_dynamodb_name
      hash_key = var.root_hash_key
 }
+
+module "root_create_ec2" {
+    source = "./modules/ec2"
+}
