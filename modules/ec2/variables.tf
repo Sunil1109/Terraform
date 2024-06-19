@@ -1,15 +1,15 @@
 variable "instance_type" {
   type = string
-  default = "t2.micro"
+  default = ""
 }
 
 variable "key_name" {
   type = string
-  default = "ec2.pem"
+  default = ""
 }
 
 variable "filepath" {
   type = string
-  default = "./file"
+  default = ""
 }
 

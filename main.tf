@@ -11,5 +11,8 @@ module "root_create_dynamo_locking" {
 }
 
 module "root_create_ec2" {
-    source = "./modules/ec2"
+     source = "./modules/ec2"
+     instance_type = var.root_instance_type
+     key_name = var.root_key_name
+     filepath = var.root_filepath
 }
